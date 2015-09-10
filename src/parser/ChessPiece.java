@@ -101,12 +101,12 @@ public class ChessPiece {
         }
 
         if (piece == Piece.PAWN) {
-            if (col != this.col) {
+            if (col != this.col/* && Parser.chessBoard[col][row].getPiece().color != this.color*/) {
                 return false;
             } else {
-                if (this.color == Color.BLACK && this.row < row) {
+                if (this.color == Color.BLACK && this.row < row && this.row > row - 3) {
                     return true;
-                } else if (this.color == Color.WHITE && this.row > row) {
+                } else if (this.color == Color.WHITE && this.row > row && this.row < row + 3) {
                     return true;
                 } else {
                     return false;

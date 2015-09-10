@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
 
         String input;
-        input = "Pa2a3Pg7g6";
+        input = "Pa2a4Pg7g6";
         int i;
         i = 0;
 
